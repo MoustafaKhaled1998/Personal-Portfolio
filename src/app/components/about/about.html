@@ -1,0 +1,32 @@
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-description">{{ personalInfo?.bio }}</p>
+        
+        <div class="about-details">
+          <div class="detail-item">
+            <h3>Location</h3>
+            <p>{{ personalInfo?.location }}</p>
+          </div>
+          <div class="detail-item">
+            <h3>Specialization</h3>
+            <p>Angular, React, TypeScript</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-image">
+        <div class="image-placeholder">
+          <svg width="300" height="300" viewBox="0 0 300 300" fill="none">
+            <rect width="300" height="300" rx="20" fill="#f3f4f6"/>
+            <circle cx="150" cy="120" r="40" fill="#6366f1"/>
+            <rect x="100" y="180" width="100" height="60" rx="10" fill="#6366f1"/>
+            <text x="150" y="220" text-anchor="middle" fill="white" font-family="Arial" font-size="14" font-weight="bold">Developer</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
