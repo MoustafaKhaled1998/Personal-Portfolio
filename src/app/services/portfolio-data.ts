@@ -27,6 +27,7 @@ export interface PersonalInfo {
   github: string;
   linkedin: string;
   resume: string;
+  photo: string;
 }
 
 @Injectable({
@@ -42,48 +43,69 @@ export class PortfolioData {
     location: 'Alexandria / Cairo, Egypt',
     github: 'https://github.com/MoustafaKhaled1998',
     linkedin: 'https://www.linkedin.com/in/moustafa-khaled-a4ab4622a/',
-    resume: '/assets/resume.pdf'
+    resume: '/assets/resume.pdf',
+    photo: 'assets/images/personal_image.jpg'
   };
 
   private projects: Project[] = [
     {
       id: 1,
       title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce platform built with Angular and Node.js. Features include user authentication, product management, shopping cart, and payment integration.',
-      image: 'https://via.placeholder.com/400x300/4f46e5/ffffff?text=E-Commerce+Platform',
-      technologies: ['Angular', 'Node.js', 'MongoDB', 'Stripe', 'JWT'],
-      liveUrl: 'https://ecommerce-demo.com',
-      githubUrl: 'https://github.com/johndoe/ecommerce',
+      description: 'Tawredah is a B2B e-commerce platform that connects SMEs and startups with factories and suppliers. It offers bulk and tiered pricing and allows businesses to request new products directly from manufacturers.',
+      image: 'assets/images/tawredah.png',
+      technologies: ['Angular', 'Firebase', 'Sass', 'PrimeNG','Responsive Design','Angular Reactive Forms'],
+      liveUrl: 'https://tawredah-e-commerce-fzwk-delta.vercel.app/',
+      githubUrl: 'https://github.com/MoustafaKhaled1998/Tawredah-E-Commerce',
       featured: true
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://via.placeholder.com/400x300/059669/ffffff?text=Task+Management',
-      technologies: ['React', 'Socket.io', 'Express', 'PostgreSQL'],
-      liveUrl: 'https://taskmanager-demo.com',
-      githubUrl: 'https://github.com/johndoe/taskmanager',
+      title: 'Booking App',
+      description: 'An hotel booking app with live search, login and register with authentication and complete booking system with history and payment, all with gaurded routes and a beautiful UI.',
+      image: 'assets/images/bookler.png',
+      technologies: ['React', 'Tailwind CSS','REST API', 'React Router', 'Redux' , 'React Hook Form'],
+      liveUrl: 'https://booking-react-fawn.vercel.app/',
+      githubUrl: 'https://github.com/MoustafaKhaled1998/booking-react',
       featured: true
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'A responsive weather dashboard that displays current weather conditions and forecasts for multiple cities with interactive charts.',
-      image: 'https://via.placeholder.com/400x300/dc2626/ffffff?text=Weather+Dashboard',
-      technologies: ['Vue.js', 'Chart.js', 'OpenWeather API', 'CSS3'],
-      liveUrl: 'https://weather-demo.com',
-      githubUrl: 'https://github.com/johndoe/weather',
-      featured: false
+      title: 'Movie EX',
+      description: 'A movie web app built with JavaScript, powered by public movie APIs to fetch real-time data on films. It features live search and uses Local Storage to save favorite movies for quick access. The app demonstrates strong API integration, dynamic DOM manipulation, and smooth user experience design.',
+      image: 'assets/images/MovieEX.png',
+      technologies: ['JavaScript', 'CSS', 'HTML', 'REST API','Ai integration (ChatBot)'],
+      liveUrl: 'https://moustafakhaled1998.github.io/Movie-Ex/',
+      githubUrl: 'https://github.com/MoustafaKhaled1998/Movie-Ex',
+      featured: true
     },
     {
       id: 4,
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website built with Angular featuring smooth animations and a clean design.',
-      image: 'https://via.placeholder.com/400x300/7c3aed/ffffff?text=Portfolio+Website',
-      technologies: ['Angular', 'TypeScript', 'SCSS', 'GSAP'],
-      liveUrl: 'https://johndoe-portfolio.com',
-      githubUrl: 'https://github.com/johndoe/portfolio',
+      title: 'FashionHub',
+      description: 'An e-commerce web app for browsing and purchasing fashion items online. Built with React and integrated with REST APIs for dynamic product data, it features responsive design, live product search, and Local Storage to manage the shopping cart and user preferences.',
+      image: 'assets/images/fashionHub.png',
+      technologies: ['React', 'Vite', 'Tailwind', 'React Router','State Management','Axios','Local Storage'],
+      liveUrl: 'https://e-commerce-react-sable-two.vercel.app/',
+      githubUrl: 'https://github.com/MoustafaKhaled1998/e-commerce-react',
+      featured: true
+    },
+    {
+      id: 5,
+      title: 'Movies Angular',
+      description: 'A responsive movie app built with Angular, using public APIs to display real-time data on movies and TV shows. It includes live search and favorites saved in Local Storage.',
+      image: 'assets/images/movieAngular.png',
+      technologies: ['Angular', 'Angular Signals', 'Angular Router', 'Angular HttpClient','RxJS','PrimeNG UI','Tailwind','FormsModule','API Integration'],
+      liveUrl: 'https://moustafakhaled1998.github.io/Movies-Angular/',
+      githubUrl: 'https://github.com/MoustafaKhaled1998/Movies-Angular',
+      featured: true
+    },
+    {
+      id: 6,
+      title: 'Landing Page',
+      description: 'A fully responsive landing page built with HTML and Sass, designed with a modern, clean layout and smooth animations. It adapts perfectly to all screen sizes, showcasing strong front-end structure, reusable Sass components, and attention to responsive design best practices.',
+      image: 'assets/images/sass.png',
+      technologies: ['Sass', 'HTML'],
+      liveUrl: 'https://moustafakhaled1998.github.io/sass-e-commerce/',
+      githubUrl: 'https://github.com/MoustafaKhaled1998/sass-e-commerce',
       featured: true
     }
   ];
@@ -103,6 +125,7 @@ export class PortfolioData {
     { name: 'Node.js', level: 2, category: 'backend' },
     { name: 'PostgreSQL', level: 3, category: 'backend' },
     { name: 'REST APIs', level: 4, category: 'backend' },
+    { name: 'C#', level: 3, category: 'backend' },
     
     // Tools
     { name: 'Git', level: 4, category: 'tools' },

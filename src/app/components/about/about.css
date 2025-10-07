@@ -22,7 +22,7 @@
   content: '';
   position: absolute;
   bottom: -10px;
-  left: 0;
+  left: 50%;
   width: 60px;
   height: 4px;
   background: #6366f1;
